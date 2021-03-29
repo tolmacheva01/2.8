@@ -1,0 +1,31 @@
+<html>
+   <head>
+     <script>
+	    function showImg(k){
+		  document.getElementById("img1").style.borderColor="black";
+		  document.getElementById("img2").style.borderColor="black";
+		  document.getElementById("img3").style.borderColor="black";
+		  document.getElementById("img4").style.borderColor="black";
+		  document.getElementById("img5").style.borderColor="black";
+		document.getElementById("bigimg").src="logo"+k+".jpg";
+		document.getElementById("img"+k).style.borderColor="red";
+		}
+		  var slideIndex=1;
+		  showSlides(slideIndex);
+		  function plusSlides(n){
+		  showSlides(slideIndex += n);
+		}
+	 </script>
+   </head>
+   <body onload="showImg(1)">
+     <center> 
+       <img id="bigimg" src="logo1.jpg" border="3px" width="45.5%"/><br>
+       <img id="img1" src="logo1.jpg" border="3px" width="8.3%" onclick="showImg(1)"/>   
+       <img id="img2" src="logo2.jpg" border="3px" width="8.3%" onclick="showImg(2)"/>
+       <img id="img3" src="logo3.jpg" border="3px" width="8.3%" onclick="showImg(3)"/>
+       <img id="img4" src="logo4.jpg" border="3px" width="8.3%" onclick="showImg(4)"/>
+       <img id="img5" src="logo5.jpg" border="3px" width="8.3%" onclick="showImg(5)"/>	   
+     </center>
+   </body>
+</html>   
+	   
